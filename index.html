@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Automoblox® — Wooden Car Kit Microsite</title>
+
+  <!-- My Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- My Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- My CSS Link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container container-lg d-flex align-items-center justify-content-between py-3">
+      <div class="brand">
+        <div class="logo-wrap">
+          <svg width="46" height="46" viewBox="0 0 64 64">
+            <rect x="6" y="20" width="52" height="18" rx="3" fill="#fff" opacity="0.18"/>
+            <circle cx="18" cy="44" r="4" fill="#fff" opacity="0.18"/>
+            <circle cx="46" cy="44" r="4" fill="#fff" opacity="0.18"/>
+            <path d="M8 28 L20 18 L44 18 L56 28" stroke="#fff" stroke-width="2" fill="none" opacity="0.22"/>
+          </svg>
+        </div>
+
+        <div>
+          <div class="brand-title">Automoblox<span class="reg">®</span></div>
+          <div class="brand-sub">Wooden Car Kits — Build & Collect</div>
+        </div>
+      </div>
+
+      <nav class="d-none d-md-flex">
+        <a class="nav-link px-3" href="#/">Home</a>
+        <a class="nav-link px-3" href="#/kits">Kits</a>
+        <a class="nav-link px-3" href="#/build">Build Guide</a>
+        <a class="nav-link px-3" href="#/about">About</a>
+        <a class="nav-link px-3" href="#/contact">Contact</a>
+      </nav>
+
+      <div class="d-flex align-items-center gap-2">
+        <button id="navToggle" class="btn btn-outline-light d-md-none">Menu</button>
+        <button id="favoritesOpen" class="btn btn-light btn-sm">
+          Favorites <span id="favCount" class="badge bg-secondary ms-1">0</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- My mobile nav -->
+    <div id="mobileNav" class="d-md-none mobile-nav">
+      <div class="container container-lg d-flex flex-column gap-2">
+        <a class="nav-link" href="#/">Home</a>
+        <a class="nav-link" href="#/kits">Kits</a>
+        <a class="nav-link" href="#/build">Build Guide</a>
+        <a class="nav-link" href="#/about">About</a>
+        <a class="nav-link" href="#/contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container container-lg my-4" id="app"></main>
+
+  <footer class="container container-lg">
+    <div class="row">
+      <div class="col-md-8">
+        <strong>Automoblox®</strong> — Wooden car kits created for hands-on building, play and display.
+      </div>
+      <div class="col-md-4 text-md-end mt-3 mt-md-0">
+        <small>&copy; <span id="year"></span> Automoblox. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- My Modal -->
+  <div class="modal fade" id="kitModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="kitModalTitle">Kit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" id="kitModalBody">Loading…</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- My Bootstrap Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- My JS Link -->
+  <script src="script.js"></script>
+</body>
+</html>

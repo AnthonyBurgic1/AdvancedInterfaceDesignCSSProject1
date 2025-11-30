@@ -1,0 +1,133 @@
+:root {
+  --wood-1: #8b5a2b;
+  --wood-2: #c78b57;
+  --accent: #2a6f6f;
+  --muted: #6b6b6b;
+  --max-width: 1200px;
+}
+
+body {
+  font-family: Inter, system-ui, Arial;
+  background: linear-gradient(180deg, #fff 0%, #fbfbfb 100%);
+  color: #222;
+}
+
+.container-lg {
+  max-width: var(--max-width);
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, var(--wood-2), var(--wood-1));
+  color: #fff;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-wrap {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(145deg, #c99a6b, #8e5b2d);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-title {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.reg {
+  font-size: 12px;
+}
+
+.brand-sub {
+  font-size: 12px;
+  color: rgba(255, 255, 255, .9);
+}
+
+.mobile-nav {
+  display: none;
+  padding: 0.75rem;
+  background: #fff;
+}
+
+/* Hero */
+.hero {
+  padding: 2rem 0;
+}
+
+.lead {
+  color: rgba(255, 255, 255, .95);
+}
+
+/* Grid */
+.kits-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card-kit {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(12, 12, 12, .06);
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+
+.card-kit:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(12, 12, 12, .12);
+}
+
+.kit-media {
+  height: 160px;
+  background: #eee;
+}
+
+.kit-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kit-body {
+  padding: 1rem;
+}
+
+.kit-title {
+  font-weight: 700;
+}
+
+.kit-meta {
+  font-size: .9rem;
+  color: var(--muted);
+}
+
+/* Detail */
+.kit-detail {
+  padding: 1.25rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .06);
+}
+
+/* Footer */
+footer {
+  padding: 2rem 0;
+  color: var(--muted);
+  font-size: .95rem;
+}
+
+@media (max-width: 576px) {
+  .kit-media {
+    height: 200px;
+  }
+}

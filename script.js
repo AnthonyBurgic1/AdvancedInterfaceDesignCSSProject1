@@ -11,9 +11,9 @@ navToggle.addEventListener("click", () => {
 const KITS = [
   { id:'abx-01', title:'ABX Formula', tagline:'Racer — sleek profile', level:'Intermediate', time:'2–3 hrs', price:'$39.99', imageSrc:'images/C9R-SportsCar.jpg', desc:'A streamlined wooden racer.' },
   { id:'abx-02', title:'ABX Cruiser', tagline:'Family cruiser', level:'Beginner', time:'1–2 hrs', price:'$29.99', imageSrc:'images/HotRod-HR1.jpg', desc:'Comfortable cruiser kit.' },
-  { id:'abx-05', title:'ABX Offroad', tagline:'Terrain truck', level:'Advanced', time:'3–4 hrs', price:'$49.99', imageSrc:'images/abx-offroad.jpg', desc:'Off-road suspension kit.' },
-  { id:'abx-08', title:'ABX Vintage', tagline:'Classic coupe', level:'Intermediate', time:'2–3 hrs', price:'$34.99', imageSrc:'images/abx-vintage.jpg', desc:'Retro wooden coupe.' },
-  { id:'abx-11', title:'ABX Speedster', tagline:'Minimalist speed', level:'Advanced', time:'2–3 hrs', price:'$44.99', imageSrc:'images/abx-speedster.jpg', desc:'Lightweight speedster.' }
+  { id:'abx-05', title:'ABX Offroad', tagline:'Terrain truck', level:'Advanced', time:'3–4 hrs', price:'$49.99', imageSrc:'images/M9-SportsVan.jpg', desc:'Off-road suspension kit.' },
+  { id:'abx-08', title:'ABX Vintage', tagline:'Classic coupe', level:'Intermediate', time:'2–3 hrs', price:'$34.99', imageSrc:'images/T9-PickupTruck.jpg', desc:'Retro wooden coupe.' },
+  { id:'abx-11', title:'ABX Speedster', tagline:'Minimalist speed', level:'Advanced', time:'2–3 hrs', price:'$44.99', imageSrc:'images/T900-Truck.jpg', desc:'Lightweight speedster.' }
 ];
 
 /* This is my Routing */

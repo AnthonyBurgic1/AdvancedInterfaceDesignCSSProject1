@@ -62,7 +62,6 @@ function renderKitDetail(kit) {
 
     <div class="kit-detail row g-4">
       <div class="col-md-6">
-        <img src="${kit.imageSrc}" class="img-fluid rounded" />
       </div>
       <div class="col-md-6">
         <h2>${kit.title}</h2>

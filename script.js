@@ -9,11 +9,11 @@ navToggle.addEventListener("click", () => {
 
 /* My Sample product data */
 const KITS = [
-  { id:'abx-01', title:'ABX Formula', tagline:'Racer — sleek profile', level:'Intermediate', time:'2–3 hrs', price:'$39.99', imageSrc:'images/C9R-SportsCar.jpg', desc:'A streamlined wooden racer.' },
-  { id:'abx-02', title:'ABX Cruiser', tagline:'Family cruiser', level:'Beginner', time:'1–2 hrs', price:'$29.99', imageSrc:'images/HotRod-HR1.jpg', desc:'Comfortable cruiser kit.' },
-  { id:'abx-05', title:'ABX Offroad', tagline:'Terrain truck', level:'Advanced', time:'3–4 hrs', price:'$49.99', imageSrc:'images/M9-SportsVan.jpg', desc:'Off-road suspension kit.' },
-  { id:'abx-08', title:'ABX Vintage', tagline:'Classic coupe', level:'Intermediate', time:'2–3 hrs', price:'$34.99', imageSrc:'images/T9-PickupTruck.jpg', desc:'Retro wooden coupe.' },
-  { id:'abx-11', title:'ABX Speedster', tagline:'Minimalist speed', level:'Advanced', time:'2–3 hrs', price:'$44.99', imageSrc:'images/T900-Truck.jpg', desc:'Lightweight speedster.' }
+  { id:'abx-01', title:'C9R Sports Car', tagline:'Sports Car — sleek profile', level:'Intermediate', time:'30 minutes to 1 hour', price:'$39.99', imageSrc:'images/C9R-SportsCar.jpg', desc:'A wooden Sports car.' },
+  { id:'abx-02', title:'HR1 HotRod', tagline:'Fun HotRod', level:'Beginner', time:'30 minutes to 1 hour', price:'$29.99', imageSrc:'images/HotRod-HR1.jpg', desc:'Wooden Hotrod Muscle car.' },
+  { id:'abx-05', title:'M9 Sports Minivan', tagline:'Sports Minivan', level:'Advanced', time:'30 minutes to 1 hour', price:'$49.99', imageSrc:'images/M9-SportsVan.jpg', desc:'Wooden Minivan.' },
+  { id:'abx-08', title:'T9 Pickup Truck', tagline:'Lifted Sports Pickup Truck', level:'Intermediate', time:'30 minutes to 1 hour', price:'$34.99', imageSrc:'images/T9-PickupTruck.jpg', desc:'Lifted Wooden pickup truck.' },
+  { id:'abx-11', title:'T900 Pickup Truck', tagline:'Top Model Pickup Truck', level:'Advanced', time:'30 minutes to 1 hour', price:'$44.99', imageSrc:'images/T900-Truck.jpg', desc:'Wooden Sports Pickup Truck.' }
 ];
 
 /* This is my Routing */

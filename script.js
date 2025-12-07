@@ -36,7 +36,7 @@ window.addEventListener("load", router);
 function renderHome() {
   document.getElementById("app").innerHTML = `
     <h1 class="mb-3">Welcome to Automoblox</h1>
-    <p>Explore wooden car kits designed for creativity and fun.</p>
+    <p>Explore all wooden car kits designed for creativity and fun.</p>
 
     <h3 class="mt-4">Featured Kits</h3>
     <div class="kits-grid">

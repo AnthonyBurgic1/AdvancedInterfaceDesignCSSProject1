@@ -16,12 +16,14 @@ const KITS = [
   { id:'abx-11', title:'T900 Pickup Truck', tagline:'Top Model Pickup Truck', level:'Advanced', time:'30 minutes to 1 hour', price:'$44.99', imageSrc:'images/T900-Truck.jpg', desc:'Wooden Sports Pickup Truck.' }
 ];
 
-/* This is my Routing */
+/* Routing */
 function router() {
   const hash = location.hash.replace("#/", "");
 
   if (hash === "" || hash === "home") return renderHome();
   if (hash === "kits") return renderKits();
+  if (hash === "about") return renderAbout();
+  if (hash === "contact") return renderContact();
 
   const match = KITS.find(k => k.id === hash);
   if (match) return renderKitDetail(match);
@@ -32,7 +34,7 @@ function router() {
 window.addEventListener("hashchange", router);
 window.addEventListener("load", router);
 
-/* This is my Render Functions */
+/* Render Functions */
 function renderHome() {
   document.getElementById("app").innerHTML = `
     <h1 class="mb-3">Welcome to Automoblox</h1>
@@ -73,7 +75,97 @@ function renderKitDetail(kit) {
   `;
 }
 
-/* Here is where I keep my component */
+/* ABOUT PAGE */
+function renderAbout() {
+  document.getElementById("app").innerHTML = `
+    <h1 class="mb-3">About Automoblox</h1>
+
+    <div class="kit-detail">
+      <h3>Who We Are</h3>
+      <p>
+        Automoblox® kits are designed to inspire creativity, hands-on learning, and imaginative play.
+        Built with premium wood and durable interchangeable components, each kit encourages 
+        experimentation and personalization.
+      </p>
+
+      <h3 class="mt-4">Our Mission</h3>
+      <p>
+        We believe in blending classic craftsmanship with modern design. 
+        Our goal is to give builders of all ages a satisfying experience 
+        that sparks curiosity, problem-solving, and creativity.
+      </p>
+
+      <h3 class="mt-4">What Makes Automoblox Unique?</h3>
+      <ul>
+        <li>Interchangeable components for endless customization</li>
+        <li>Premium wood construction for durability</li>
+        <li>Award-winning design philosophy</li>
+        <li>Collectible kits suitable for both play and display</li>
+      </ul>
+
+      <p class="mt-4">
+        Whether you're building your first kit or adding to a growing collection, 
+        Automoblox delivers a fun and rewarding hands-on experience.
+      </p>
+    </div>
+  `;
+}
+
+/* CONTACT PAGE */
+function renderContact() {
+  document.getElementById("app").innerHTML = `
+    <h1 class="mb-3">Contact Us</h1>
+
+    <div class="kit-detail">
+      <p>
+        Have a question about your kit, need help with a build, or want to share feedback?
+        Use the form below — we'd love to hear from you!
+      </p>
+
+      <form id="contactForm" class="mt-3">
+        <div class="mb-3">
+          <label class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="cName" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="cEmail" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Message</label>
+          <textarea class="form-control" id="cMessage" rows="4" required></textarea>
+        </div>
+
+        <button class="btn btn-dark" type="submit">Send Message</button>
+      </form>
+
+      <div id="contactSuccess" class="alert alert-success mt-3 d-none">
+        Thank you! Your message has been sent.
+      </div>
+    </div>
+  `;
+
+  // Form handler
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("cName").value.trim();
+    const email = document.getElementById("cEmail").value.trim();
+    const message = document.getElementById("cMessage").value.trim();
+
+    if (!name || !email || !message) {
+      alert("Please fill out all fields.");
+      return;
+    }
+
+    document.getElementById("contactSuccess").classList.remove("d-none");
+    this.reset();
+  });
+}
+
+/* Reusable component */
 function kitCardHTML(k) {
   return `
     <div class="card-kit">

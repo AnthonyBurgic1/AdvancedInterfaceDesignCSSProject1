@@ -38,7 +38,7 @@ function renderHome() {
     <h1 class="mb-3">Welcome to Automoblox</h1>
     <p>Explore all wooden car kits designed for creativity and fun.</p>
 
-    <h3 class="mt-4">Featured Kits</h3>
+    <h3 class="mt-4">All of our Featured Kits</h3>
     <div class="kits-grid">
       ${KITS.slice(0, 3).map(k => kitCardHTML(k)).join("")}
     </div>
@@ -47,7 +47,7 @@ function renderHome() {
 
 function renderKits() {
   document.getElementById("app").innerHTML = `
-    <h1 class="mb-3">All Kits</h1>
+    <h1 class="mb-3">All our Kits</h1>
     <div class="kits-grid">
       ${KITS.map(k => kitCardHTML(k)).join("")}
     </div>
